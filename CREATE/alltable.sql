@@ -1,14 +1,16 @@
+-- Tabel wajib_pajak
 CREATE TABLE wajib_pajak (
 	id BIGINT IDENTITY(1,1) PRIMARY KEY,
 	npwp VARCHAR(16) NOT NULL,
 	nik CHAR(16) NOT NULL,
-	email VARCHAR(255) UNIQUE,
+	email VARCHAR(255) UNIQUE NOT NULL,
 	nama VARCHAR(255) NOT NULL,
 	nomor_telepon VARCHAR(255) NOT NULL,
 	alamat VARCHAR(255) NOT NULL,
 	tipe_wajib_pajak TINYINT DEFAULT 0,
 );
 
+-- Tabel laporan_pajak untuk hubungan one-to-many ke tabel wajib_pajak
 CREATE TABLE laporan_pajak (
 	id BIGINT IDENTITY(1,1) PRIMARY KEY,
 	wajib_pajak_id BIGINT NOT NULL,
@@ -21,6 +23,7 @@ CREATE TABLE laporan_pajak (
 		ON UPDATE CASCADE
 );
 
+-- Tabel transaksi_keuangan untuk hubungan one-to-many ke tabel wajib_pajak
 CREATE TABLE transaksi_keuangan (
 	id BIGINT IDENTITY(1,1) PRIMARY KEY,
 	wajib_pajak_id BIGINT NOT NULL,
@@ -34,12 +37,14 @@ CREATE TABLE transaksi_keuangan (
 		ON UPDATE CASCADE
 );
 
+-- Tabel kategori_pajak
 CREATE TABLE kategori_pajak (
 	id BIGINT IDENTITY(1,1) PRIMARY KEY,
 	nama VARCHAR(255) NOT NULL,
 	tarif_pajak DECIMAL(10,2) NOT NULL,
 );
 
+-- Tabel laporan_pajak_detail untuk hubungan Many-to-Many antara laporan_pajak dan kategori_pajak
 CREATE TABLE laporan_pajak_detail (
 	id BIGINT IDENTITY(1,1) PRIMARY KEY,
 	laporan_pajak_id BIGINT NOT NULL,
@@ -52,8 +57,3 @@ CREATE TABLE laporan_pajak_detail (
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
 );
-
-
-
-
-
