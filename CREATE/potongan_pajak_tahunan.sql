@@ -5,8 +5,8 @@ CREATE TABLE potongan_pajak_tahunan (
     persentase_pajak FLOAT NOT NULL,
     penghasilan_kena_pajak DECIMAL(18, 2) NOT NULL,
     total_pajak DECIMAL(18, 2) NOT NULL,
-    created_at TIMESTAMP NOT NULL,
-    updated_at DATETIME NOT NULL,
+    created_at DATETIME NOT NULL,
+    updated_at TIMESTAMP NOT NULL,
 	FOREIGN KEY (akumulasi_penghasilan_tahunan_id) REFERENCES akumulasi_penghasilan_tahunan(id)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE

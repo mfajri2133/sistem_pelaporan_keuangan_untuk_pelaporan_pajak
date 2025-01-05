@@ -3,8 +3,8 @@ CREATE TABLE akumulasi_potongan_tahunan (
     id BIGINT IDENTITY(1,1) PRIMARY KEY,
     akumulasi_penghasilan_tahunan_id BIGINT NOT NULL,
     potongan_pajak_tahunan_id BIGINT NOT NULL,
-    created_at TIMESTAMP NOT NULL,
-    updated_at DATETIME NOT NULL,
+    created_at DATETIME NOT NULL,
+    updated_at TIMESTAMP NOT NULL,
 	FOREIGN KEY (akumulasi_penghasilan_tahunan_id) REFERENCES akumulasi_penghasilan_tahunan(id)
 		ON DELETE NO ACTION
 		ON UPDATE NO ACTION,

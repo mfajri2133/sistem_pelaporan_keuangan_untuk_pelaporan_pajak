@@ -8,8 +8,8 @@ CREATE TABLE akumulasi_penghasilan_bulanan (
     total_pajak DECIMAL(18, 2) NOT NULL,
     penghasilan_bersih DECIMAL(18, 2) NOT NULL,
     periode DATE NOT NULL,
-    created_at TIMESTAMP NOT NULL,
-    updated_at DATETIME NOT NULL,
+    created_at DATETIME NOT NULL,
+    updated_at TIMESTAMP NOT NULL,
 	FOREIGN KEY (wajib_pajak_id) REFERENCES wajib_pajak(id)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE,

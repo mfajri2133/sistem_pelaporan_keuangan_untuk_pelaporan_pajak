@@ -9,8 +9,8 @@ CREATE TABLE wajib_pajak (
     tipe_wajib_pajak TINYINT DEFAULT 0,
     golongan_id BIGINT NOT NULL,
     ptkp_id BIGINT NOT NULL,
-    created_at TIMESTAMP NOT NULL,
-    updated_at DATETIME NOT NULL,
+    created_at DATETIME NOT NULL,
+    updated_at TIMESTAMP NOT NULL,
 	FOREIGN KEY (golongan_id) REFERENCES golongan(id)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE,

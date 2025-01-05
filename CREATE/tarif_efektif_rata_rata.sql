@@ -4,6 +4,6 @@ CREATE TABLE tarif_efektif_rata_rata (
     jumlah_minimal DECIMAL(18, 2) NOT NULL,
     jumlah_maksimal DECIMAL(18, 2) NOT NULL,
     persentase_pajak FLOAT NOT NULL,
-    created_at TIMESTAMP NOT NULL,
-    updated_at DATETIME NOT NULL
+    created_at DATETIME NOT NULL,
+    updated_at TIMESTAMP NOT NULL
 );

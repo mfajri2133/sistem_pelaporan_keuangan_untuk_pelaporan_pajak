@@ -4,10 +4,6 @@ CREATE TABLE pengguna (
     nama VARCHAR(255) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
     passwords VARCHAR(255) NOT NULL,
-    role_id BIGINT NOT NULL,
-    created_at TIMESTAMP NOT NULL,
-    updated_at DATETIME NOT NULL,
-	FOREIGN KEY (role_id) REFERENCES roles(id)
-		ON DELETE CASCADE
-		ON UPDATE CASCADE
+    created_at DATETIME NOT NULL,
+    updated_at TIMESTAMP NOT NULL,
 );

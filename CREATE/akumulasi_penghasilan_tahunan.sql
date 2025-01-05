@@ -6,8 +6,8 @@ CREATE TABLE akumulasi_penghasilan_tahunan (
     selisih_pajak DECIMAL(18, 2) NOT NULL,
     tahun INT NOT NULL,
     jumlah_ptkp DECIMAL(18, 2) NOT NULL,
-    created_at TIMESTAMP NOT NULL,
-    updated_at DATETIME NOT NULL,
+    created_at DATETIME NOT NULL,
+    updated_at TIMESTAMP NOT NULL,
 	FOREIGN KEY (wajib_pajak_id) REFERENCES wajib_pajak(id)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
