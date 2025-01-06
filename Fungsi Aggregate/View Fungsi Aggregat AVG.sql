@@ -1,4 +1,4 @@
--- Query Membuat View V_JumlahLaporanWajbPajak
+-- Query Membuat View V_RatarataPajakBulPerGol
 CREATE VIEW V_RatarataPajakBulPerGol AS
 SELECT 
     g.nama AS nama_golongan,

@@ -1,4 +1,5 @@
-CREATE TRIGGER PengecekanNominal
+-- Query Membuat Trigger PengecekanNominalMinimal
+CREATE TRIGGER PengecekanNominalMinimal
 ON laporan_penghasilan
 AFTER INSERT
 AS
