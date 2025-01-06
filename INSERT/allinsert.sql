@@ -452,9 +452,3 @@ INSERT INTO akumulasi_potongan_tahunan (akumulasi_penghasilan_tahunan_id, potong
 (28, 28, '2023-01-28 12:00:00'),
 (29, 29, '2023-01-29 12:00:00'),
 (30, 30, '2023-01-30 12:00:00');
-
-
-
-
-
-	
