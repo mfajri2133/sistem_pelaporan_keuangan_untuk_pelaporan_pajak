@@ -1,0 +1,15 @@
+1. Nama view : pen_bulanan
+
+   Description : View ini digunakan untuk menampilkan pendapatan bulanan wajib pajak lengkap dengan total pajak dan penghasilan bersih
+
+   Actors : 1. Wajib Pajak
+
+
+
+2. Nama view : join_tarif_efektif_golongan
+
+   Description : View ini digunakan untuk menampilkan informasi arif efektif berdasarkan golongan,termasuk jumlah minimal, jumlah maksimal, dan persentase pajak yang berlaku. View ini menggabungkan data dari tabel tarif_efektif_rata_rata, tarif_efektif_per_golongan, dan golongan menggunakan LEFT join agar semua data golongan ditampilkan.
+
+   Actors : 1. Admin Pajak
+	    2. Petugas Pajak
+	    3. Developer

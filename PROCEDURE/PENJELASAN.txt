@@ -1,0 +1,21 @@
+1. Akumulasi Penghasilan Bulanan
+	Requirement: Mendapatkan detail penghasilan bulanan untuk wajib pajak dalam
+ 		     rentang Waktu tertentu
+
+	Functions : Mengembalikan total penghasilan, total pajak, penghasilan 			    
+		    bersih, dan periode dari tabel akumulasi_penghasilan_bulanan
+
+
+2. Laporan Penghasilan
+	Requirement: Mengambil data laporan penghasilan berdasarkan ID wajib pajak dan rentang tanggal tertentu
+
+	Functions : Mengembalikan informasi transaksi penghasilan dari tabel laporan_penghasilan termasuk nominal, tanggal, keterangan.
+
+
+3. Golongan Tarif Efektif
+	Requirement: Mendapatkan informasi golongan pajak dengan persentase tarif dalam rentang tertentu
+
+	Functions : Menyaring data golongan berdasarkan persentase tarif pajak yang diberikan, menggabungkan tabel golongan, tarif_efektif_per_golongan, dan 				    tarif_efektif_rata_rata.
+
+
+SEMUANYA TIDAK ADA TRIGGERNYA.

@@ -1,0 +1,46 @@
+1. Nama view : view_wp
+
+   Description : View ini menampilkan data akumulasi pendapatan bulanan setiap wajib pajak, data ini mencakup informasi wajib pajak seperti NPWP, total penghasilan 		 bulanan, total pajak dan periode akumulasi.
+
+   Actors : 1. 	Wajib Pajak
+            2. 	Admin Pajak
+
+
+
+
+2. Nama view : join_laporan_penghasilan
+   
+   Description : View ini menggabungkan abel laporan_penghasilan dengan table wajib_pajak untuk menampilkan laporan penghasilan beserta nama wajib pajak yang terkait.
+
+   Actors : 1. 	Wajib Pajak
+	    2. 	Admin Pajak
+
+
+
+
+3. Nama view : join_akumulasi_tarif
+
+   Description : View ini menggabungkan table akumulasi_penghasilan_bulanan, tarif_efektif_rata_rata untuk menampilkan ata akumulasi bulanan engan total penghasilan, 		 total pajak, periode dan persentase pajak yang sesuai
+
+   Actors : 1. 	Wajib Pajak
+	    2. 	Admin Pajak
+
+
+
+
+4. Nama view : join_golongan_ptkp
+
+   Description : View ini menggabungkan table golongan dan ptkp menggunakan CROSS JOIN, yang menghasilkan semua kombinasi data antara golongan dan jumlah PTKP
+
+   Actors : 1. 	Wajib Pajak
+            2. 	Admin Pajak
+
+
+
+
+5. Nama view : wp_golongan
+
+   Description : View ini menggabungkan table wajib_pajak dengan table golongan untuk menampilkan informasi wajib pajak beserta golongan mereka. Data yang dihasilkan 		 mencakup ID wajib pajak, NPW, email, nama wajib pajak, nomor telepon, dan nama golongan.
+
+   Actors : 1. 	Wajib Pajak
+	    2. 	Admin Pajak
