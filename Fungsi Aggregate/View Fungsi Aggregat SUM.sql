@@ -1,5 +1,5 @@
--- Query Membuat View V_TotalPenghasilaWajibPajak
-CREATE VIEW V_TotalPenghasilaWajibPajak AS
+-- Query Membuat View V_TotalPenghasilanWajibPajak
+CREATE VIEW V_TotalPenghasilanWajibPajak AS
 SELECT 
     wp.nama AS nama_wajib_pajak,
     SUM(apb.total) AS total_penghasilan

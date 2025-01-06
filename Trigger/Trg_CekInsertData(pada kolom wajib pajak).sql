@@ -1,6 +1,7 @@
-CREATE TRIGGER CekInsertData
+-- Query Membuat Trigger CekInsertDataNama
+CREATE TRIGGER CekInsertDataNama
 ON wajib_pajak
-FOR INSERT
+FOR INSERT 
 AS
 BEGIN
     IF EXISTS (SELECT * FROM inserted WHERE nama LIKE '%[^a-zA-Z]%')
@@ -10,3 +11,8 @@ BEGIN
 	END
 END;
 GO
+
+
+
+
+

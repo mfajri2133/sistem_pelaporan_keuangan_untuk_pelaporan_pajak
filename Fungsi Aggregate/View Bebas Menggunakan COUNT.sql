@@ -1,5 +1,5 @@
--- Query Membuat View V_JumlahLaporanWajbPajak
-CREATE VIEW V_JumlahLaporanWajbPajak AS
+-- Query Membuat View V_JumlahLaporanWajibPajak
+CREATE VIEW V_JumlahLaporanWajibPajak AS
 SELECT 
     wp.nama AS nama_wajib_pajak,
     COUNT(lp.id) AS jumlah_laporan
